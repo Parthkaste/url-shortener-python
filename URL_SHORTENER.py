@@ -2,7 +2,6 @@ import json
 import random
 import string
 import os
-
 FILE_NAME = "urls.json"
 
 # Load data
@@ -11,7 +10,7 @@ if os.path.exists(FILE_NAME):
         urls = json.load(file)
 else:
     urls = {}
-
+    
 while True:
     print("\n--- URL Shortener ---")
     print("1. Shorten URL")
@@ -50,3 +49,4 @@ while True:
 
     else:
         print("Invalid choice. Please try again.")
+
